@@ -41,7 +41,7 @@ IMGUI_CXX = imgui.cpp imgui_draw.cpp imgui_tables.cpp imgui_widgets.cpp \
 
 MH_C = $(MINHOOK)/src/buffer.c $(MINHOOK)/src/hook.c $(MINHOOK)/src/trampoline.c $(MINHOOK)/src/hde/hde64.c
 
-SH_CXX = ScriptEngine.cpp ScriptHookAPI.cpp ImGuiScriptConsole.cpp
+PROXY_CXX = proxy/main.cpp
 
 UHX_OBJ  = $(addprefix $(OUTDIR)/uhx_,$(patsubst %.cpp,%.o,$(UHX_CXX)))
 IMGUI_OBJ = $(addprefix $(OUTDIR)/im_,$(patsubst %.cpp,%.o,$(IMGUI_CXX)))

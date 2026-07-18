@@ -1,3 +1,6 @@
+# Session Files
+session-ses*
+
 # Build References
 References/
 
@@ -69,3 +72,24 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Temp Files
+*~
+*.tmp
+*.bak
+*.swp
+*~
+
+# System Files
+.DS_Store
+Thumbs.db
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Mac OS X files
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fsevent
