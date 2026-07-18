@@ -4,7 +4,7 @@
 #include "console/console.hpp"
 #include "hooks/hooks.hpp"
 #include "utils/utils.hpp"
-#include "MinHook.h""
+#include "MinHook.h"
 #include "ScriptEngine.h"
 
 DWORD WINAPI OnProcessAttach(LPVOID lpParam);
