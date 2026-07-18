@@ -14,9 +14,9 @@
 
 #include "hook_directx10.hpp"
 
-#include "imgui_impl_dx10.h"
-#include "imgui_impl_win32.h"
-#include "MinHook.h""
+#include "backends/imgui_impl_dx10.h"
+#include "backends/imgui_impl_win32.h"
+#include "MinHook.h"
 
 #include "../../../utils/utils.hpp"
 #include "../../hooks.hpp"

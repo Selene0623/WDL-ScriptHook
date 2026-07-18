@@ -8,9 +8,9 @@
 
 #include "hook_opengl.hpp"
 
-#include "imgui_impl_opengl3.h"
-#include "imgui_impl_win32.h"
-#include "MinHook.h""
+#include "backends/imgui_impl_opengl3.h"
+#include "backends/imgui_impl_win32.h"
+#include "MinHook.h"
 
 #include "../../hooks.hpp"
 

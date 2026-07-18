@@ -13,9 +13,9 @@
 
 #include "hook_vulkan.hpp"
 
-#include "imgui_impl_vulkan.h"
-#include "imgui_impl_win32.h"
-#include "MinHook.h""
+#include "backends/imgui_impl_vulkan.h"
+#include "backends/imgui_impl_win32.h"
+#include "MinHook.h"
 
 #include "../../hooks.hpp"
 

@@ -11,7 +11,7 @@
 #include "../menu/menu.hpp"
 #include "../utils/utils.hpp"
 
-#include "MinHook.h""
+#include "MinHook.h"
 
 static HWND g_hWindow = NULL;
 static std::mutex g_mReinitHooksGuard;
