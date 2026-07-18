@@ -19,11 +19,15 @@ void ImGuiScriptConsole::Render()
             ImVec2(-1.0f, 100.0f),
             ImGuiInputTextFlags_AllowTabInput);
 
-        if (ImGui::Button("Run (Ctrl+Enter)")) {
+        bool run_requested = ImGui::Button("Run (Ctrl+Enter)") ||
+                             (ImGui::IsItemFocused() && ImGui::IsKeyDown(ImGuiKey_ModCtrl) && ImGui::IsKeyPressed(ImGuiKey_Enter));
+
+        if (run_requested) {
             ScriptEngine::RunString(inputBuf);
             inputBuf[0] = '\0';
             focusInput = true;
         }
+
         ImGui::SameLine();
         if (ImGui::Button("Reload All Scripts")) {
             ScriptEngine::ReloadScripts();
@@ -32,13 +36,6 @@ void ImGuiScriptConsole::Render()
         if (ImGui::Button("Clear Log")) {
             // Simple way: clear the log buffer (could use a method in ScriptEngine)
             const_cast<std::vector<std::string>&>(ScriptEngine::GetLog()).clear();
-        }
-
-        // Run on Ctrl+Enter
-        if (ImGui::IsItemFocused() && ImGui::IsKeyDown(ImGuiKey_ModCtrl) && ImGui::IsKeyPressed(ImGuiKey_Enter)) {
-            ScriptEngine::RunString(inputBuf);
-            inputBuf[0] = '\0';
-            focusInput = true;
         }
 
         // Output log window

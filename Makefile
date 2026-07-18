@@ -4,7 +4,7 @@
 CXX      = x86_64-w64-mingw32-g++
 CC       = x86_64-w64-mingw32-gcc
 
-SRCDIR   = src
+SRCDIR = .
 LUAJIT   = lib/luajit/src
 IMGUI    = lib/imgui
 MINHOOK  = lib/minhook
