@@ -22,4 +22,4 @@ For Linux with MinGW (because I run the game on Proton-Cachyos through Steam):
 Copy `out/dinput8.dll` to: `.local/share/Steam/steamapps/common/WatchDogs_Legion/bin`
 
 4. Launch Game
-You see the splash screen then nothing? Good - it's working. I told you it was RIP.
+You see the splash screen then nothing? Good - it's working. I told you it was WIP.
