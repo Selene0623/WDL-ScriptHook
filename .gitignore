@@ -1,5 +1,22 @@
 # Session Files
 session-ses*
+session-vim*
+
+# AI Files
+AGENTS.md
+
+# Packages
+*.tgz
+*.zip
+*.bz2
+*.7z
+*.rar
+*.tar.gz
+*.tar.bz2
+*.tar.7z
+*.tar.xz
+*.tar.Z
+
 
 # Build References
 References/

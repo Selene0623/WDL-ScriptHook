@@ -26,7 +26,7 @@ cd lib/luajit && make CC="x86_64-w64-mingw32-gcc" HOST_CC="gcc" TARGET_SYS=Windo
 
 # Build ScriptHook
 make clean && make
-# Output: build/ScriptHookWDL.dll
+# Output: build/dinput8.dll
 ```
 
 ## Deploy
