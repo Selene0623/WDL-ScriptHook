@@ -1,4 +1,6 @@
-  void* MDLE = GetModuleHandleA("DuniaDemo_clang_64_dx12.dll");
+#include <windows.h>
+
+void* MDLE = GetModuleHandleA("DuniaDemo_clang_64_dx12.dll");
   switch (a2) {
   case 0x1065a744:
   {
@@ -6,7 +8,7 @@
       std::cout << colors::blue << " Hash Redirected." << "\n";
       return RVAtoVA(MDLE, 0x6447f50);
       break;
-  } 
+  }
   case 0x1115f518:
   {
       return RVAtoVA(MDLE, 0x0000000001FB8670);
@@ -76,7 +78,7 @@
   case 0x5a03e044: { return RVAtoVA(MDLE, 0xB50ABA0);  break; }
   case 0x5b57e4e5: { return RVAtoVA(MDLE, 0x000000000690F1F0);  break; }
   case 0x5ccd3cc8: { return RVAtoVA(MDLE, 0xB445330);  break; } // Structure Access
-  case 0x5d459f9b: { return RVAtoVA(MDLE, 0x00000000060FDBD0);  break; } 
+  case 0x5d459f9b: { return RVAtoVA(MDLE, 0x00000000060FDBD0);  break; }
   case 0x5d7fcb77: { return RVAtoVA(MDLE, 0x0000000006906210);  break; }
   case 0x5f174c59: { return RVAtoVA(MDLE, 0x000000000690C260);  break; }
   case 0x5f198ae3: { return RVAtoVA(MDLE, 0x000000000679D330);  break; }
@@ -107,8 +109,8 @@
   case 0x83dfb78c: { return RVAtoVA(MDLE, 0x0000000001213B20);  break; }
   case 0x845cf8c1: { return RVAtoVA(MDLE, 0x000000000690BBC0);  break; }
   case 0x85df22f4: { return RVAtoVA(MDLE, 0x5A5B80);  break; }
-  case 0x8635b064: { return RVAtoVA(MDLE, 0x68CD780);  break; } // ? Lua Manager ? 
-  case 0x8777223a: { return RVAtoVA(MDLE, 0x000000000644A160);  break; } 
+  case 0x8635b064: { return RVAtoVA(MDLE, 0x68CD780);  break; } // ? Lua Manager ?
+  case 0x8777223a: { return RVAtoVA(MDLE, 0x000000000644A160);  break; }
   case 0x8b058e8: { return RVAtoVA(MDLE, 0xB516D78);  break; }
   case 0x8ca23226: { return RVAtoVA(MDLE, 0xB3F3E38);  break; }
   case 0x8f5f0384: { return RVAtoVA(MDLE, 0x4F0C90);  break; }
@@ -147,7 +149,7 @@
   case 0xb1a6b68b: { return RVAtoVA(MDLE, 0x000000000061D9F0);  break; }
   case 0xb398f87b: { return RVAtoVA(MDLE, 0x00000000005C2A00);  break; }
   case 0xb729f708: { return RVAtoVA(MDLE, 0x00000000000024C6);  break; } // Call Redirect -> fix needed
-  case 0xb7a48562: { return RVAtoVA(MDLE, 0x0000000006A9C150);  break; } 
+  case 0xb7a48562: { return RVAtoVA(MDLE, 0x0000000006A9C150);  break; }
   case 0xb9f3f7f9: { return RVAtoVA(MDLE, 0x0000000007DEECA0);  break; }
   case 0xbbc634e8: { return RVAtoVA(MDLE, 0x00000000068CBFD0);  break; }
   case 0xbd4d5d0c: { return RVAtoVA(MDLE, 0x00000000072F4290);  break; }
@@ -288,4 +290,3 @@
   case 0xd7e62a1: { return RVAtoVA(MDLE, 0x0000000002C06700);  break; }
   case 0x3d111f0f: { return RVAtoVA(MDLE, 0x000000000247F130);  break; }
   case 0xc945839: { return RVAtoVA(MDLE, 0x000000000243ECD0);  break; }
-
