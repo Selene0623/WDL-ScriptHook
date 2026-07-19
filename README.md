@@ -1,8 +1,12 @@
 # Notice
 
+
 This is still **WORK IN PROGRESS**
+
 ---
+
 20%-30% of new offsets are still missing from offsets.cpp which is not implemented and the game currently will not launch with current code anyway.
+
 ---
 # Instructions
 
