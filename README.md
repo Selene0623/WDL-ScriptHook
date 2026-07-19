@@ -19,7 +19,9 @@ For Linux with MinGW (because I run the game on Proton-Cachyos through Steam):
 `make clean && bear -- make`
 
 3. Deploy ScriptHook
+
 Copy `out/dinput8.dll` to: `.local/share/Steam/steamapps/common/WatchDogs_Legion/bin`
 
-4. Launch Game
+5. Launch Game
+
 You see the splash screen then nothing? Good - it's working. I told you it was WIP.
