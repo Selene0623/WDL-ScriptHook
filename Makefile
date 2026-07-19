@@ -41,7 +41,7 @@ IMGUI_CXX = imgui.cpp imgui_draw.cpp imgui_tables.cpp imgui_widgets.cpp \
 
 MH_C = $(MINHOOK)/src/buffer.c $(MINHOOK)/src/hook.c $(MINHOOK)/src/trampoline.c $(MINHOOK)/src/hde/hde64.c
 
-PROXY_CXX = proxy/main.cpp
+SH_CXX = ScriptEngine.cpp ScriptHookAPI.cpp ImGuiScriptConsole.cpp
 
 UHX_OBJ  = $(addprefix $(OUTDIR)/uhx_,$(patsubst %.cpp,%.o,$(UHX_CXX)))
 IMGUI_OBJ = $(addprefix $(OUTDIR)/im_,$(patsubst %.cpp,%.o,$(IMGUI_CXX)))
@@ -49,7 +49,7 @@ MH_OBJ   = $(OUTDIR)/mh_buffer.o $(OUTDIR)/mh_hook.o $(OUTDIR)/mh_trampoline.o $
 SH_OBJ   = $(addprefix $(OUTDIR)/sh_,$(patsubst %.cpp,%.o,$(SH_CXX)))
 
 ALL_OBJ = $(UHX_OBJ) $(IMGUI_OBJ) $(MH_OBJ) $(SH_OBJ)
-TARGET  = $(OUTDIR)/ScriptHookWDL.dll
+TARGET  = $(OUTDIR)/dinput8.dll
 
 .PHONY: all clean
 
